@@ -39,6 +39,7 @@ body {
   border: none;
   outline: none;
 }
+
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus,
 .btn-primary:focus {
@@ -46,14 +47,17 @@ body {
   box-shadow: 0 0 0 0 var(--dark-pink);
   border: none;
 }
+
 a,
 a:hover {
   color: white;
   text-decoration: none;
 }
+
 .App {
   font-family: 'Lato', sans-serif;
 }
+
 .navbar {
   padding: 10px;
   background-color: var(--dark-pink);
@@ -66,4 +70,18 @@ a:hover {
 .card-body {
   padding: 0;
   flex: none;
+}
+
+li:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+li:nth-child(even) {
+  background-color: var(--dark-pink);
+}
+
+.list-group-item {
+  color: white;
+  border: none;
+  padding: 20px 10px;
 }

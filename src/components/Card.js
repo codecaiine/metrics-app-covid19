@@ -11,7 +11,7 @@ const CountryCard = ({ country }) => {
   return (
     <Card key={country['All'].country} className="card border-0 p-2">
       <Card.Link href={page}>
-      <div className="d-flex justify-content-between ps-3">
+        <div className="d-flex justify-content-between ps-3">
           <img src={covid} alt="covid virus" className="map w-50 h-50" />
           <FiArrowRightCircle />
         </div>

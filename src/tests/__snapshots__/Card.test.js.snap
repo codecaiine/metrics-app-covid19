@@ -13,7 +13,7 @@ exports[`Filter component Snapshot test 1`] = `
     >
       <img
         alt="covid virus"
-        className="map w-50 h-50"
+        className="virus-img"
         src="virus.png"
       />
       <svg

@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Navbar from './Navbar';
 import CountryCard from './Card';
-import TotalCases from './TotalCases';
+import TotalCases from './TotalCard';
 
 const Home = () => {
   const countries = useSelector((state) => state.countriesReducer);

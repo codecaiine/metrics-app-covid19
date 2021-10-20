@@ -19,17 +19,13 @@ const Details = () => {
     <div>
       <Navbar title="Country cases" left={<FaLessThan />} />
       <div className="d-flex align-items-center justify-content-evenly px-2 py-3 main-card">
-        <img src={virus} alt="covid virus" className="map w-25 h-25" />
+        <img src={virus} alt="covid virus" className="virus-img-details" />
         <TotalCard name={country.country} total={country.confirmed} />
       </div>
       <div className="d-flex align-items-center justify-content-around filter">
         <p>COUNTRY BREAKDOWN</p>
       </div>
       <ListGroup as="ul" className="text-light">
-        <ListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
-          <h4>Recovered</h4>
-          <p>{country.recovered}</p>
-        </ListGroup.Item>
         <ListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
           <h3>Deaths</h3>
           <p>{country.deaths}</p>

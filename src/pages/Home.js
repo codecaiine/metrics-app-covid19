@@ -25,10 +25,10 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar title="All Africa cases" left="2021" />
+      <Navbar title="Covid19 confirmed cases" left="2021" />
       <div>
         <div className="d-flex align-items-center justify-content-evenly px-2 py-3 main-card">
-          <img src={africa} alt="map of africa" className="map w-25 h-25" />
+          <img src={africa} alt="map of africa" className="africa-img" />
           <TotalCard name="AFRICA" total={total} className="fs-2" />
         </div>
         <div className="d-flex align-items-center justify-content-around filter">

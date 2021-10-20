@@ -3,7 +3,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { FiArrowRightCircle } from 'react-icons/fi';
-import covid from '../assets/images/covid.svg';
+import virus from '../assets/images/virus.png';
 
 const CountryCard = ({ country }) => {
   const page = `/details/${country['All'].country}`;
@@ -12,7 +12,7 @@ const CountryCard = ({ country }) => {
     <Card key={country['All'].country} className="card border-0 p-2">
       <Card.Link href={page}>
         <div className="d-flex justify-content-between ps-3">
-          <img src={covid} alt="covid virus" className="map w-50 h-50" />
+          <img src={virus} alt="covid virus" className="virus-img" />
           <FiArrowRightCircle />
         </div>
         <div className="text-end">

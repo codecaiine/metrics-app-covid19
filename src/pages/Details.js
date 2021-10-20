@@ -6,7 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Navbar from '../components/Navbar';
 import TotalCard from '../components/TotalCard';
 import { loadCountry } from '../redux/countries/countries';
-import covid from '../assets/covid.svg';
+import virus from '../assets/images/virus.png';
 
 const Details = () => {
   const country = useSelector((state) => state.countriesReducer);
@@ -19,7 +19,7 @@ const Details = () => {
     <div>
       <Navbar title="Country cases" left={<FaLessThan />} />
       <div className="d-flex align-items-center justify-content-evenly px-2 py-3 main-card">
-        <img src={covid} alt="covid virus" className="map w-25 h-25" />
+        <img src={virus} alt="covid virus" className="map w-25 h-25" />
         <TotalCard name={country.country} total={country.confirmed} />
       </div>
       <div className="d-flex align-items-center justify-content-around filter">

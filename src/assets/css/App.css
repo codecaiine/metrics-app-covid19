@@ -63,8 +63,18 @@ a:hover {
   background-color: var(--dark-pink);
 }
 
-.map {
-  opacity: 0.3;
+.virus-img {
+  width: 150px;
+  -webkit-filter: brightness(50%) grayscale(50%) opacity(.5);
+  filter: brightness(50%) grayscale(50%) opacity(.5);
+
+}
+
+.africa-img {
+  width: 500px;
+  height: 500px;
+  -webkit-filter: brightness(50%) grayscale(50%) opacity(.5);
+  filter: brightness(50%) grayscale(50%) opacity(.5);
 }
 
 .card-body {

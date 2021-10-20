@@ -69,8 +69,8 @@ a:hover {
   filter: brightness(50%) grayscale(50%) opacity(0.5);
 }
 
-.virus-img-details{
-  width: 250px;
+.virus-img-details {
+  width: 333px;
   -webkit-filter: brightness(50%) grayscale(50%) opacity(0.5);
   filter: brightness(50%) grayscale(50%) opacity(0.5);
 }

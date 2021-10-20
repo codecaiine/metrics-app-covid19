@@ -1,4 +1,3 @@
-/* eslint-disable dot-notation */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../components/Navbar';
@@ -9,13 +8,13 @@ import Filter from '../components/Filter';
 import africa from '../assets/images/africa.svg';
 
 const Home = () => {
-  const countries = useSelector((state) => state.countriesReducer);
+  const countries = useSelector((state) => state.countriesReducer.continent);
   const dispatch = useDispatch();
 
   let total = 0;
   if (countries) {
     countries.forEach((element) => {
-      total += element['All'].confirmed;
+      total += element.All.confirmed;
     });
   }
 
@@ -36,12 +35,13 @@ const Home = () => {
           <Filter handleFilter={handleFilter} />
         </div>
         <div className="d-flex flex-wrap">
-          {countries.map((country) => (
-            <CountryCard key={country['All'].country} country={country} />
+          {countries && countries.map((country) => (
+            <CountryCard key={country.All.country} country={country} />
           ))}
         </div>
       </div>
     </div>
   );
 };
+
 export default Home;

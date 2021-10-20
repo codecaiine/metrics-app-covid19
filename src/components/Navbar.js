@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = (props) => {
   const { title, left } = props;
-  if (title === 'Country cases') {
+  if (title !== 'All Africa cases') {
     return (
       <div className="d-flex justify-content-between align-items-center navbar">
         <NavLink to="/" exact>{left}</NavLink>
@@ -33,7 +33,7 @@ Navbar.propTypes = {
   title: PropTypes.string.isRequired,
   left: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.object,
+    PropTypes.element,
   ]).isRequired,
 };
 

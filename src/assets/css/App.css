@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --dark-pink: #ec4c8a;
+  --light-pink: #fc5193;
+}
+
+*,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-pink);
+}
+
+.card {
+  width: 48.7%;
+  margin: 2px;
+}
+
+.card,
+.main-card {
+  background-color: var(--light-pink);
+}
+
+.h5 {
+  font-weight: 700;
+}
+
+.filter {
+  background-color: var(--dark-pink);
+}
+
+.dropdown,
+.dropdown:hover {
+  background-color: var(--dark-pink);
+  border: none;
+  outline: none;
+}
+
+.show > .btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle:focus,
+.btn-primary:focus {
+  background-color: var(--dark-pink);
+  box-shadow: 0 0 0 0 var(--dark-pink);
+  border: none;
+}
+
+a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.App {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: var(--dark-pink);
+}
+
+.virus-img {
+  width: 150px;
+  -webkit-filter: brightness(50%) grayscale(50%) opacity(0.5);
+  filter: brightness(50%) grayscale(50%) opacity(0.5);
+}
+
+.virus-img-details {
+  width: 333px;
+  -webkit-filter: brightness(50%) grayscale(50%) opacity(0.5);
+  filter: brightness(50%) grayscale(50%) opacity(0.5);
+}
+
+.africa-img {
+  width: 500px;
+  height: 500px;
+  -webkit-filter: brightness(50%) grayscale(50%) opacity(0.5);
+  filter: brightness(50%) grayscale(50%) opacity(0.5);
+}
+
+.card-body {
+  padding: 0;
+  flex: none;
+}
+
+li:nth-child(odd) {
+  background-color: var(--light-pink);
+}
+
+li:nth-child(even) {
+  background-color: var(--dark-pink);
+}
+
+.list-group-item {
+  color: white;
+  border: none;
+  padding: 20px 10px;
+}

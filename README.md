@@ -1,5 +1,5 @@
 # COVID19 Metrics App
-> This application collects data from an API about coronavirus in Africa. Real live data is obtained from the MMediaGroup API.
+This application collects data from an API about coronavirus in Africa. Real live data is obtained from the MMediaGroup API.
 
 ### Home page
 

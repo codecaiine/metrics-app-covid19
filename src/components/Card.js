@@ -31,7 +31,7 @@ CountryCard.propTypes = {
   country: PropTypes.shape({
     All: PropTypes.shape({
       country: PropTypes.string,
-      confirmed: PropTypes.number,
+      confirmed: PropTypes.string,
     }),
   }).isRequired,
 };

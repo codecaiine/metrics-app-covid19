@@ -1,4 +1,5 @@
 import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Home from '../pages/Home';
 
@@ -7,18 +8,18 @@ jest.mock('react-redux', () => ({
   useSelector: () => ([
     {
       All: {
-        confirmed: '204900',
+        confirmed: '205529',
         recovered: '0',
-        deaths: '5862',
+        deaths: '5878',
         country: 'Algeria',
       },
     },
     {
       All: {
-        confirmed: '2222',
+        confirmed: '5069',
         recovered: '0',
-        deaths: '5862',
-        country: 'Morocco',
+        deaths: '174',
+        country: 'Chad',
       },
     },
   ]),
@@ -29,18 +30,18 @@ jest.mock('../redux/countries/countries', () => ({
   loadContinent: () => ([
     {
       All: {
-        confirmed: '204900',
+        confirmed: '205529',
         recovered: '0',
-        deaths: '5862',
+        deaths: '5878',
         country: 'Algeria',
       },
     },
     {
       All: {
-        confirmed: '2222',
+        confirmed: '5069',
         recovered: '0',
-        deaths: '5862',
-        country: 'Morocco',
+        deaths: '174',
+        country: 'Chad',
       },
     },
   ]),
@@ -49,22 +50,32 @@ jest.mock('../redux/countries/countries', () => ({
 describe('Home page', () => {
   test('Snapshot test', () => {
     const home = renderer.create(
-      <Home />,
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
     )
       .toJSON();
     expect(home).toMatchSnapshot();
   });
 
   test('UI test', () => {
-    render(<Home />);
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
     expect(screen.getByRole('button')).toBeInTheDocument();
   });
 
   test('Fire filter event', () => {
-    render(<Home />);
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
     fireEvent.select(screen.getByRole('button'), {
       target: { eventKey: '99999' },
     });
-    expect(screen.getByText(/Morocco/)).toBeInTheDocument();
+    expect(screen.getByText(/Chad/)).toBeInTheDocument();
   });
 });

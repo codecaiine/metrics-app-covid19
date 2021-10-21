@@ -5,11 +5,17 @@ exports[`Home page Snapshot test 1`] = `
   <div
     className="d-flex justify-content-between align-items-center navbar"
   >
-    <p>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
       2021
-    </p>
+    </a>
     <p>
-      All Africa cases
+      Covid19 confirmed cases
     </p>
     <div
       className="fs-4"
@@ -67,7 +73,7 @@ exports[`Home page Snapshot test 1`] = `
     >
       <img
         alt="map of africa"
-        className="map w-25 h-25"
+        className="africa-img"
         src="africa.svg"
       />
       <div
@@ -85,7 +91,7 @@ exports[`Home page Snapshot test 1`] = `
             className="d-flex flex-column card-text"
           >
             <span>
-              02049002222
+              02055295069
             </span>
             Confirmed Cases
           </p>
@@ -128,7 +134,7 @@ exports[`Home page Snapshot test 1`] = `
           >
             <img
               alt="covid virus"
-              className="map w-50 h-50"
+              className="virus-img"
               src="virus.png"
             />
             <svg
@@ -177,7 +183,7 @@ exports[`Home page Snapshot test 1`] = `
               <p
                 className="card-text"
               >
-                204900
+                205529
               </p>
             </div>
           </div>
@@ -188,14 +194,14 @@ exports[`Home page Snapshot test 1`] = `
       >
         <a
           className="card-link"
-          href="/details/Morocco"
+          href="/details/Chad"
         >
           <div
             className="d-flex justify-content-between ps-3"
           >
             <img
               alt="covid virus"
-              className="map w-50 h-50"
+              className="virus-img"
               src="virus.png"
             />
             <svg
@@ -236,7 +242,7 @@ exports[`Home page Snapshot test 1`] = `
             <div
               className="card-title h5"
             >
-              Morocco
+              Chad
             </div>
             <div
               className="card-body"
@@ -244,7 +250,7 @@ exports[`Home page Snapshot test 1`] = `
               <p
                 className="card-text"
               >
-                2222
+                5069
               </p>
             </div>
           </div>

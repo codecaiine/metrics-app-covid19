@@ -2,10 +2,12 @@
 > This application collects data from an API about coronavirus in Africa. Real live data is obtained from the MMediaGroup API.
 
 ### Home page
-![screenshot]()
+![screenshot](./src/assets/images/covid.PNG)
+
+![screenshot](./src/assets/images/covid1.PNG)
 
 ### Details page
-![screenshot]()
+![screenshot](./src/assets/images/covid3.PNG)
 
 ## Built With
 

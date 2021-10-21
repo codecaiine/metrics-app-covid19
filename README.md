@@ -18,7 +18,7 @@
 
 ## Live demo
 
-[COVID-19 App Demo]()
+[COVID-19 App Demo](https://covid19-metrics-app-aka.netlify.app/)
 
 ## Getting Started
 
